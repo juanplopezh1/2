@@ -1,0 +1,16 @@
+#se dicen ciclos porque permiten repetir
+#while : mientras la condicion se cumpla se ejecutaran las instrucciones y mientras no se term,ina
+#input : entrada de datos al programa , es el que solicita que el ususario ingrese
+#int : entero
+respuesta = "si"
+num = 0
+while respuesta == "si":
+    num = int(input("dijite un dijito"))
+    if num > 0:
+        print("el numero ingresado es positivo")
+    elif num <0:
+        print("el numero ingresado es negativo")
+    else:
+        print("el numero ingresado es igual que cero")
+        
+

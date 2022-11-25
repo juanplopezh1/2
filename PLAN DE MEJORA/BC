@@ -1,0 +1,9 @@
+#bucle while
+#while es igual a mientras 
+#or es para añadir mas condiciones
+numero = int(input("dijite un numero"))
+while numero<=10:
+#mientras que la variable sea menor o igua
+#Python break y Python continue son dos formas de detener o
+#  interrumpir un bucle. Estos comandos suelen funcionar junto a una sentencia if.
+#El doble igual “==” se utiliza para conocer si un valor es igual a otro valor. 

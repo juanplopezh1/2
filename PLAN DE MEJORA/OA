@@ -1,0 +1,12 @@
+#OPERADORES ARIMETICOS
+
+#parentesis()
+#exponemciacion**
+#multiplicacion*
+#dividion/ y division exacta o entera//
+#modulo%
+#suma+
+#resta -
+# ejemplo : 3al cubo(13/5-(2*4))
+resultado = 3**3 * (13/5 - (2*4))
+print(resultado)

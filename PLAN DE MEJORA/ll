@@ -1,0 +1,36 @@
+#listas en cadena 
+lista_cadena = ["lunes","martes","miercoles","jueves","viernes"]
+print(lista_cadena[0:3])
+#siempre llega una pocision antes del ingresado
+#depues de los 2 puntos python llrga hasta el dato ingresado
+#comienza desde 0 
+#-significa que comienza desde el final 
+#las listas puedesn estar dentro de otra la lista recibe valores boleanos y enteros y flotantes
+#LEN determina la cantidad de elementos de nuestra lista
+#variable.append es agregar un valor al final de la lista
+lista = [1,2,3,4,5,6,7,8,9,10]
+lista.append("juan")
+print(lista)
+#variable.insert()poner el indice en el que quiero que valla mi valor. primero donde quiero que valla y despues el valor
+lista.extend([11,12,13,14])
+#agregar varios valores 
+print(8 in lista)
+#es como un buscador el in busca lo deseado dentro de la lista si , si esta aparece true y si no false
+print(lista.index(5))
+#funciona como buscador pero como resultado te bota en el indice donde esta ubicado
+print(lista.count(2))
+#es un buscador de cuantas veces esta repetido lo ingresado que deseas 
+lista.pop()
+#si ponemos esta funcion y dejamos estos() sin nada se encarga de eliminar el ultimo
+#si queremos eliminar algo en la lista debemos poner el indice en el que se encuentra
+lista.remove(5)
+#esta funcion es parecida pero aca debemos ingresar en ()el valor que queremos eliminar
+#lista.clear() esta es si queremos dejar vacia la lista
+lista.reverse()
+#esta funcion es para darle la vuelta a la lista
+#si quiero que la lista se me multiplique solo toca poner el*2 al final de ella
+lista.sort()
+#si queremos la lista ordenada este comando lo hara acendente del menor al mayor
+lista.sort(reverse=True)
+#esta es de mayor a menor la organizacion
+print(lista)

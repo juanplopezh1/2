@@ -1,0 +1,4 @@
+#crear una lista la cual sea [1,2,3,"a","b","c"] y que la salida sea a y 3
+list= [1,2,3,"a","b","c"]
+print(list[-3])
+print(list[2])
