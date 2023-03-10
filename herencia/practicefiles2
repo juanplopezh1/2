@@ -1,0 +1,48 @@
+from Aprendiz import *                                            #importamos la clase aprendiz con from import
+from Curso import *                                               #importamos la clase curso   con from import
+
+# nombre=input('ingrese nombre del aprendiz')
+# documento=int(input('ingrese documento del aprendiz'))
+# ficha=input('ingrese ficha del aprendiz')
+
+# ap=Aprendiz(ficha,nombre,documento)
+
+# nombreCurso=input('ingrese nombre del curso')
+# horas=int(input('ingrese intensidad horaria del curso'))
+# c1=Curso(nombreCurso,horas)
+# ap.agregarCurso(c1)
+
+# with open('herencia/aprendices.txt','a') as flujo:    
+#     flujo.write(ap.getFicha()+','+ap.getNombre()+','+str(ap.getDocumento())+'\n')
+
+with open('herencia/aprendices.txt','r') as flujo:         #ponemos la variable seguido de un punto y el write (hacemos un salto de linea y lo que deseamos escribir en el archivo de la ruta de arriba )
+    datos=flujo.read()                                     #creamos una variable clase en la que va a ir flujo seguido de read 
+    print(datos)                                           #imprimimos datos 
+    #flujo.write('2560664,maria,123') 
+aprendices=[]                                              #creamos una lista vacia llamada aprendizes 
+with open('herencia/aprendices.txt','r') as flujo:         ##ponemos la variable seguido de un punto y el write (hacemos un salto de linea y lo que deseamos escribir en el archivo de la ruta de arriba )
+    for linea in flujo:                                    #ponemos un for para que recorra linia 
+        #print(linea)
+        aprendices.append(linea.rsplit())                  #ponemos la lista llamada aprendices .append para agregar y un parametro con linea .rsplit()
+
+datosxlinea=[]                                             #ponemos una lista vacia llamada datosxlinea 
+for aprendiz in aprendices:                                #ponemos un for para que recorra la clase aprendiz 
+    datosxlinea.append(aprendiz[0].split(','))             #datosxlinea.append para agregar aprendiz en una lista con una  coma 
+
+#print(ob.getNombre())
+
+print(datosxlinea)                                         #imprimimos darosxlinea 
+
+listaDeObjetos=[]                                          #creamos una lista vacia que tenga lista de objetos 
+for apr in datosxlinea:                                    #creamos un for para que recorra en datosxlinea 
+     f=apr[0]                                              
+     n=apr[1]
+     d=apr[2]
+     ob=Aprendiz(f,n,d)
+     print(ob)
+     listaDeObjetos.append(ob)
+
+for xx in listaDeObjetos:                                  #recorremos xx con el for en lista de objetos 
+    print(xx.getNombre())                                  #llamamos a xx.get nombre 
+    print(xx.getDocumento())                               #llamamos a xx.getdocumento 
+    print(xx.getFicha())                                   #llamamos a xx.getficha 
